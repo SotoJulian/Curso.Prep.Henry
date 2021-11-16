@@ -1,7 +1,7 @@
 // En estas primeras 6 preguntas, reemplaza `null` por la respuesta
 
 // Crea una variable "string", puede contener lo que quieras:
-// const nuevaString = 'hola';
+const nuevaString = 'hola';
 
 // Crea una variable numérica, puede ser cualquier número:
 const nuevoNum = 31 ;
@@ -41,7 +41,7 @@ function suma(x, y) {
 function resta(x, y) {
   // Resta "y" de "x" y devuelve el valor
   // Tu código:
-  return y - x ;
+  return x - y ;
 }
 
 function multiplica(x, y) {
@@ -71,7 +71,7 @@ function tienenMismaLongitud(str1, str2) {
   // Devuelve "true" si las dos strings tienen la misma longitud
   // De lo contrario, devuelve "false"
   // Tu código:
-  return str1 . length === str2 . length
+  return str1.length === str2.length
 }
 
 function menosQueNoventa(num) {
@@ -118,19 +118,19 @@ function esImpar(num) {
     return true ; }
     else { return false ;
     }
-
+  }
 
 function elevarAlCuadrado(num) {
   // Devuelve el valor de "num" elevado al cuadrado
   // ojo: No es raiz cuadrada!
   // Tu código:
-  Math.pow ( num , 2 ) ;
+  return Math.pow ( num , 2 ) ;
 }
 
 function elevarAlCubo(num) {
   // Devuelve el valor de "num" elevado al cubo
   // Tu código:
-  Math.pow ( num , 3 ) ;
+  return Math.pow ( num , 3 ) ;
 }
 
 function elevar(num, exponent) {
@@ -142,19 +142,19 @@ function elevar(num, exponent) {
 function redondearNumero(num) {
   // Redondea "num" al entero más próximo y devuélvelo
   // Tu código:
-  return math.redondearHaciaArriba ( num )
+  return Math.round ( num )
 }
 
 function redondearHaciaArriba(num) {
   // Redondea "num" hacia arriba (al próximo entero) y devuélvelo
   // Tu código:
-  return math.ceil ( num ) ;
+  return Math.ceil ( num ) ;
 }
 
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
-  return math.random ()
+  return Math.random ()
 }
 
 function esPositivo(numero) {
@@ -165,10 +165,10 @@ function esPositivo(numero) {
   if ( numero === 0 ) { 
     return false ;
   } 
-  if else ( numero > 0 ) ; {
+  if ( numero > 0 )  {
     return "Es positivo"
   } 
-  else ( numero < 0 ) ; {
+  if ( numero < 0 )  {
     return "Es negativo"
   }
 }
@@ -184,7 +184,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var combinado = nombre + apellido ;
+  var combinado = nombre + " " + apellido ;
   return combinado ;
 }
 
@@ -192,7 +192,7 @@ function obtenerSaludo(nombre) {
   // Toma la string "nombre" y concatena otras string en la cadena para que tome la siguiente forma:
   // "Martin" -> "Hola Martin!"
   // Tu código:
-  return " Hola " + nombre + "!" ;
+  return "Hola " + nombre + "!" ;
 }
 
 function obtenerAreaRectangulo(alto, ancho) {
@@ -233,7 +233,7 @@ function esVocal(letra){
   if ( letra.length > 1 ) {
     return "Dato incorrecto" ;
   }
-  if ( letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u") ; {
+  if ( letra === "a" || letra === "e" || letra === "i" || letra === "o" || letra === "u")  {
     return "Es vocal";
   }
   return "Dato incorrecto"
@@ -278,4 +278,4 @@ module.exports = {
   areaDelTriangulo,
   deEuroAdolar,
   esVocal,
-};
+}
