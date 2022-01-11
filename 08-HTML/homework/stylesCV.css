@@ -1,0 +1,18 @@
+.nombre {
+	text-align: center;
+}
+img {
+	display: block;
+	margin: auto;
+}
+.Hobbies {
+	position: relative;
+	top: -150px;
+	left: 400px;
+	width: 500px;
+}
+.justificado {
+	max-width: 1000px;
+	margin: 0 auto;
+	text-align: justify;
+}
